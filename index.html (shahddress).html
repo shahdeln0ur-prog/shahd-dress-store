@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>Shahd Dress Store</title>
+<style>
+body { font-family: Arial; margin:0; padding:0; direction: rtl; background:#f5f5f5;}
+.container { width:90%; max-width:1200px; margin:auto;}
+header {background:#fff; padding:15px 0; border-bottom:1px solid #ddd; text-align:center;}
+.designs { display:grid; grid-template-columns: repeat(4,1fr); gap:20px; margin-top:30px;}
+.design { background:#fff; padding:15px; border-radius:15px; text-align:center; box-shadow:0 4px 12px rgba(0,0,0,0.1);}
+.design img { width:100%; height:220px; object-fit:cover; border-radius:12px;}
+.design h2 { font-size:18px; margin:10px 0 5px;}
+.design p { font-size:14px; color:#666;}
+select, input { width:90%; margin:5px 0; padding:5px;}
+.add-btn, .order-btn { padding:8px 15px; border:none; border-radius:10px; cursor:pointer; color:#fff;}
+.add-btn { background:#2196f3;}
+.order-btn { background:#25d366; text-decoration:none; display:inline-block; }
+.cart { background:#fff; padding:15px; margin-top:30px; border-radius:15px;}
+.cart-items { list-style:none; padding:0;}
+.cart-items li { margin-bottom:10px;}
+@media(max-width:992px){.designs{grid-template-columns:repeat(2,1fr);}}
+@media(max-width:576px){.designs{grid-template-columns:1fr;}}
+</style>
+</head>
+<body>
+
+<header>
+<header style="text-align:center; padding:40px 20px; background:#2196f3; color:#fff;">
+    <h1 style="font-size:36px; margin-bottom:10px;">Shahd Dress Store</h1>
+    <p style="font-size:20px; margin-bottom:20px;">اختاري الفستان المثالي لمناسبتك المميزة</p>
+    
+    <!-- زر للتصفح -->
+    <a href="#designs" style="
+        display:inline-block; 
+        padding:12px 25px; 
+        background:#25d366; 
+        color:#fff; 
+        border-radius:10px; 
+        text-decoration:none; 
+        font-size:16px;
+        transition: transform 0.2s;
+    " onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        تصفحي الفساتين
+    </a>
+    
+    <!-- صورة بانر اختيارية -->
+    <div style="margin-top:30px;">
+        <img src="banner.jpg" alt="Shahd Dress Store" style="width:80%; max-width:800px; border-radius:12px;">
+    </div>
+</header>
+
+<div class="container">
+<div class="designs">
+
+<!-- الفساتين 1 إلى 36 -->
+<!-- كرري هذا البلوك لكل فستان وعدلي src وdata-name وh2 -->
+<div class="design" data-name="فستان 1">
+<img src="dress/1.jpg" alt="فستان 1">
+<h2>فستان 1</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 2 إلى 36 -->
+<div class="design" data-name="فستان 2">
+<img src="dress/2.jpg" alt="فستان 2">
+<h2>فستان 2</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 3 إلى 36 -->
+<div class="design" data-name="فستان 3">
+<img src="dress/3.jpg" alt="فستان 3">
+<h2>فستان 3</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 4 إلى 36 -->
+<div class="design" data-name="فستان 4">
+<img src="dress/4.jpg" alt="فستان 4">
+<h2>فستان 4</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 5 إلى 36 -->
+<div class="design" data-name="فستان 5">
+<img src="dress/5.jpg" alt="فستان 5">
+<h2>فستان 5</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 6 إلى 36 -->
+<div class="design" data-name="فستان 6">
+<img src="dress/6.jpg" alt="فستان 6">
+<h2>فستان 6</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 7 إلى 36 -->
+<div class="design" data-name="فستان 7">
+<img src="dress/7.jpg" alt="فستان 7">
+<h2>فستان 7</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 8 إلى 36 -->
+<div class="design" data-name="فستان 8">
+<img src="dress/8.jpg" alt="فستان 8">
+<h2>فستان 8</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 8 إلى 36 -->
+<div class="design" data-name="فستان 8">
+<img src="dress/8.jpg" alt="فستان 8">
+<h2>فستان 8</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 9 إلى 36 -->
+<div class="design" data-name="فستان 9">
+<img src="dress/9.jpg" alt="فستان 9">
+<h2>فستان 9</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 10 إلى 36 -->
+<div class="design" data-name="فستان 10">
+<img src="dress/10.jpg" alt="فستان 10">
+<h2>فستان 10</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 11 إلى 36 -->
+<div class="design" data-name="فستان 11">
+<img src="dress/11.jpg" alt="فستان 11">
+<h2>فستان 11</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 12 إلى 36 -->
+<div class="design" data-name="فستان 12">
+<img src="dress/12.jpg" alt="فستان 12">
+<h2>فستان 12</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 13 إلى 36 -->
+<div class="design" data-name="فستان 13">
+<img src="dress/13.jpg" alt="فستان 13">
+<h2>فستان 13</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 14 إلى 36 -->
+<div class="design" data-name="فستان 14">
+<img src="dress/14.jpg" alt="فستان 14">
+<h2>فستان 14</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 15 إلى 36 -->
+<div class="design" data-name="فستان 15">
+<img src="dress/15.jpg" alt="فستان 15">
+<h2>فستان 15</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 16 إلى 36 -->
+<div class="design" data-name="فستان 16">
+<img src="dress/16.jpg" alt="فستان 16">
+<h2>فستان 16</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 17 إلى 36 -->
+<div class="design" data-name="فستان 17">
+<img src="dress/17.jpg" alt="فستان 17">
+<h2>فستان 17</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 18 إلى 36 -->
+<div class="design" data-name="فستان 18">
+<img src="dress/18.jpg" alt="فستان 18">
+<h2>فستان 18</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 19 إلى 36 -->
+<div class="design" data-name="فستان 19">
+<img src="dress/19.jpg" alt="فستان 19">
+<h2>فستان 19</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 20 إلى 36 -->
+<div class="design" data-name="فستان 20">
+<img src="dress/20.jpg" alt="فستان 20">
+<h2>فستان 20</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 21 إلى 36 -->
+<div class="design" data-name="فستان 21">
+<img src="dress/21.jpg" alt="فستان 21">
+<h2>فستان 21</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 22 إلى 36 -->
+<div class="design" data-name="فستان 22">
+<img src="dress/22.jpg" alt="فستان 22">
+<h2>فستان 22</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 23 إلى 36 -->
+<div class="design" data-name="فستان 23">
+<img src="dress/23.jpg" alt="فستان 23">
+<h2>فستان 23</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 24 إلى 36 -->
+<div class="design" data-name="فستان 24">
+<img src="dress/24.jpg" alt="فستان 24">
+<h2>فستان 24</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 25 إلى 36 -->
+<div class="design" data-name="فستان 25">
+<img src="dress/25.jpg" alt="فستان 25">
+<h2>فستان 25</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 26 إلى 36 -->
+<div class="design" data-name="فستان 26">
+<img src="dress/26.jpg" alt="فستان 26">
+<h2>فستان 26</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 27 إلى 36 -->
+<div class="design" data-name="فستان 27">
+<img src="dress/27.jpg" alt="فستان 27">
+<h2>فستان 27</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 28 إلى 36 -->
+<div class="design" data-name="فستان 28">
+<img src="dress/28.jpg" alt="فستان 28">
+<h2>فستان 28</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 29 إلى 36 -->
+<div class="design" data-name="فستان 29">
+<img src="dress/29.jpg" alt="فستان 29">
+<h2>فستان 29</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 30 إلى 36 -->
+<div class="design" data-name="فستان 30">
+<img src="dress/30.jpg" alt="فستان 30">
+<h2>فستان 30</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 31 إلى 36 -->
+<div class="design" data-name="فستان 31">
+<img src="dress/31.jpg" alt="فستان 31">
+<h2>فستان 31</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 32 إلى 36 -->
+<div class="design" data-name="فستان 32">
+<img src="dress/32.jpg" alt="فستان 32">
+<h2>فستان 32</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 34 إلى 36 -->
+<div class="design" data-name="فستان 34">
+<img src="dress/34.jpg" alt="فستان 34">
+<h2>فستان 34</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 35 إلى 36 -->
+<div class="design" data-name="فستان 35">
+<img src="dress/35.jpg" alt="فستان 35">
+<h2>فستان 35</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- كرري البلوك وعدلي src وdata-name وh2 للفستان 36 إلى 36 -->
+<div class="design" data-name="فستان 36">
+<img src="dress/36.jpg" alt="فستان 36">
+<h2>فستان 36</h2>
+<p>تصميم أنيق وراقي</p>
+<select class="size">
+<option disabled selected>اختر المقاس</option>
+<option>S</option>
+<option>M</option>
+<option>L</option>
+</select>
+<select class="color">
+<option disabled selected>اختر اللون</option>
+<option>أحمر</option>
+<option>أسود</option>
+<option>وردي</option>
+<option>أزرق</option>
+<option>أبيض</option>
+<option>ذهبي</option>
+</select>
+<select class="occasion">
+<option disabled selected>اختر المناسبة</option>
+<option>زفاف</option>
+<option>سهرة</option>
+<option>حفلة</option>
+</select>
+<button class="add-btn">أضف للسلة</button>
+</div>
+
+<!-- السلة -->
+<div class="cart" style="
+    background:#fff;
+    border:4px solid red;
+    padding:40px;
+    max-width:1000px;
+    margin:40px auto;
+">
+
+   <h2>سلة المشتريات</h2>
+   <ul class="cart-items"></ul>
+   <label>الاسم:</label>
+   <input type="text" id="custName" placeholder="اسمك">
+   <label>رقم الهاتف:</label>
+   <input type="text" id="custPhone" placeholder="رقمك">
+   <label>العنوان:</label>
+   <input type="text" id="custAddress" placeholder="عنوانك">
+   <a id="sendOrder" class="order-btn" href="#" target="_blank">أرسل الطلب على واتساب</a>
+</div>
+
+<script>
+let cart = [];
+const addBtns = document.querySelectorAll('.add-btn');
+const cartItems = document.querySelector('.cart-items');
+
+addBtns.forEach(btn => {
+btn.addEventListener('click', () => {
+    const design = btn.parentElement;
+    const name = design.getAttribute('data-name');
+    const size = design.querySelector('.size').value;
+    const color = design.querySelector('.color').value;
+    const occasion = design.querySelector('.occasion').value;
+
+    if(!size  || !color  ||!occasion){
+        alert('اختر جميع الخيارات أولاً');
+        return;
+    }
+
+    const item = {name, size, color, occasion};
+    cart.push(item);
+
+    cartItems.innerHTML = '';
+    cart.forEach(item => {
+        const li = document.createElement('li');
+        li.textContent = '${item.name} - ${item.size} - ${item.color} - ${item.occasion}';
+        cartItems.appendChild(li);
+    });
+});
+});
+
+document.getElementById('sendOrder').addEventListener('click',(e)=>{
+    e.preventDefault();
+    const name = document.getElementById('custName').value;
+    const phone = document.getElementById('custPhone').value;
+    const address = document.getElementById('custAddress').value;
+
+    if(!name  || !phone  ||!address){
+        alert('ادخلي الاسم، رقم الهاتف، والعنوان');
+        return;
+    }
+
+    let msg = 'طلب جديد من ${name}%0Aرقم الهاتف: ${phone}%0Aالعنوان: ${address}%0A%0Aتفاصيل الطلب:%0A';
+    cart.forEach(item=>{
+        msg += '- ${item.name}, ${item.size}, ${item.color}, ${item.occasion}%0A';
+    });
+    const waLink = 'https://wa.me/249112772809?text=${msg}';
+});
+</script>
+
+</body>
+</html>
